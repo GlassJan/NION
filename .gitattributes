@@ -1,0 +1,2 @@
+# Preserve copied source bytes so SOURCE_MANIFEST hashes survive checkout.
+* -text

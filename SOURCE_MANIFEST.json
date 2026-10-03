@@ -1,0 +1,242 @@
+{
+  "schema": "nion-source-provenance-v1",
+  "createdUTC": "2026-10-03T07:52:01.627Z",
+  "scope": "Portable source extraction; not the complete QHON campaign or a trained GNN",
+  "license": "UNLICENSED: owner selection pending",
+  "files": [
+    {
+      "file": "src/cell/control-neuron.mjs",
+      "source": "Neuron Set/src/cell/control-neuron.mjs",
+      "sourceSHA256": "7a1fdcc2f25338265d6269680452d184ea1c76e56eeb0e60b5ff8f6126f227d8",
+      "exportSHA256": "7a1fdcc2f25338265d6269680452d184ea1c76e56eeb0e60b5ff8f6126f227d8",
+      "bytes": 11070,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/control-config.mjs",
+      "source": "Neuron Set/src/cell/control-config.mjs",
+      "sourceSHA256": "7d7035e805056875cf787b37581e86ff24371d44fef5d2801bbc56cbecddeb0d",
+      "exportSHA256": "7d7035e805056875cf787b37581e86ff24371d44fef5d2801bbc56cbecddeb0d",
+      "bytes": 4914,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/control-dynamics.mjs",
+      "source": "Neuron Set/src/cell/control-dynamics.mjs",
+      "sourceSHA256": "8d4b1cc779d9bd36f25432072895f82327a7ac520f0393fdefb545d6095f0c87",
+      "exportSHA256": "8d4b1cc779d9bd36f25432072895f82327a7ac520f0393fdefb545d6095f0c87",
+      "bytes": 1749,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/ionic-kinetics.mjs",
+      "source": "Neuron Set/src/cell/ionic-kinetics.mjs",
+      "sourceSHA256": "9a5f4917b79a31606a64b22ef2a83e53e6fbe00b711f1c741ee7887889b6926c",
+      "exportSHA256": "9a5f4917b79a31606a64b22ef2a83e53e6fbe00b711f1c741ee7887889b6926c",
+      "bytes": 1343,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/protocol.mjs",
+      "source": "Neuron Set/src/cell/protocol.mjs",
+      "sourceSHA256": "d52f2bfe3fcc0f9e5d859134c87dc7781bb4f9a2ad7f6ffe1a65e6fa8e979673",
+      "exportSHA256": "d52f2bfe3fcc0f9e5d859134c87dc7781bb4f9a2ad7f6ffe1a65e6fa8e979673",
+      "bytes": 2700,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/runtime.mjs",
+      "source": "Neuron Set/src/cell/runtime.mjs",
+      "sourceSHA256": "78563137f4cfca227585060d522dbdbed04a68af2e07bf73c5b64d3e44387351",
+      "exportSHA256": "78563137f4cfca227585060d522dbdbed04a68af2e07bf73c5b64d3e44387351",
+      "bytes": 3703,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/cell/units.mjs",
+      "source": "Neuron Set/src/cell/units.mjs",
+      "sourceSHA256": "49f50f690ca69a576b7f3f12464c1044f12cb7d68fe7d444eb2de0df364f5685",
+      "exportSHA256": "49f50f690ca69a576b7f3f12464c1044f12cb7d68fe7d444eb2de0df364f5685",
+      "bytes": 3311,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/plastic-synapse.mjs",
+      "source": "Neuron Set/src/plastic-synapse.mjs",
+      "sourceSHA256": "1beb7e589c48f3d4532aab48f03e18b4bcaafa644d6f6645e8d66f35f877149c",
+      "exportSHA256": "1beb7e589c48f3d4532aab48f03e18b4bcaafa644d6f6645e8d66f35f877149c",
+      "bytes": 6774,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/network.mjs",
+      "source": "Neuron Set/src/network.mjs",
+      "sourceSHA256": "6b6277eb9bcfcbb3addd90d2c23bce879e9539302a9081f9a9f25d0a7e7f4573",
+      "exportSHA256": "6b6277eb9bcfcbb3addd90d2c23bce879e9539302a9081f9a9f25d0a7e7f4573",
+      "bytes": 13111,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/circuit.mjs",
+      "source": "Neuron Set/src/circuit.mjs",
+      "sourceSHA256": "8357b38ab1b762a6f64f38cc3325224cd9edbf0e4ae8c169cfb96a9ec8770c55",
+      "exportSHA256": "8357b38ab1b762a6f64f38cc3325224cd9edbf0e4ae8c169cfb96a9ec8770c55",
+      "bytes": 1278,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/learning-experiment.mjs",
+      "source": "Neuron Set/src/learning-experiment.mjs",
+      "sourceSHA256": "1e2c03dc59ce5bd52a8e923e514dfc70175fa039330012e959b36073eff9580a",
+      "exportSHA256": "1e2c03dc59ce5bd52a8e923e514dfc70175fa039330012e959b36073eff9580a",
+      "bytes": 4478,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "tests/plastic-synapse.test.mjs",
+      "source": "Neuron Set/tests/plastic-synapse.test.mjs",
+      "sourceSHA256": "9d3cba1fa3781665d72df72a535286932669929764b3d8edffc42e32ede718c3",
+      "exportSHA256": "9d3cba1fa3781665d72df72a535286932669929764b3d8edffc42e32ede718c3",
+      "bytes": 2603,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "tests/soft-bounded-synapse.test.mjs",
+      "source": "Neuron Set/tests/soft-bounded-synapse.test.mjs",
+      "sourceSHA256": "cad19ab7cab1208d83c6e88c56763dafe0ef0a65eb76182dee732d5411b5d1fe",
+      "exportSHA256": "cad19ab7cab1208d83c6e88c56763dafe0ef0a65eb76182dee732d5411b5d1fe",
+      "bytes": 6570,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/model-v1.mjs",
+      "source": "QHON/human8/model-v1.mjs",
+      "sourceSHA256": "e7ae932c439982f7a9060f2c567b09aa18de5fb810adaea09d2c9cf037622615",
+      "exportSHA256": "e7ae932c439982f7a9060f2c567b09aa18de5fb810adaea09d2c9cf037622615",
+      "bytes": 15900,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/model-v2.mjs",
+      "source": "QHON/human8/model-v2.mjs",
+      "sourceSHA256": "0ffe392ffe0492f1f8f8b01ccf17fcd64d173ef2c72c61c0a634b8285f1f305e",
+      "exportSHA256": "0ffe392ffe0492f1f8f8b01ccf17fcd64d173ef2c72c61c0a634b8285f1f305e",
+      "bytes": 11632,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/compact-cache-v11b.mjs",
+      "source": "QHON/human8/compact-cache-v11b.mjs",
+      "sourceSHA256": "c9e73f57dd0875d28886dd1724c1e6d3b907b16d2299ff8d219f48f8cb97c9b3",
+      "exportSHA256": "c9e73f57dd0875d28886dd1724c1e6d3b907b16d2299ff8d219f48f8cb97c9b3",
+      "bytes": 3397,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/li-qrng-stream-v13.mjs",
+      "source": "QHON/human8/li-qrng-stream-v13.mjs",
+      "sourceSHA256": "b13d0d1a9b57df8252f3f3707d55b06b8699926a3deb7651e680af8c69cca22d",
+      "exportSHA256": "b13d0d1a9b57df8252f3f3707d55b06b8699926a3deb7651e680af8c69cca22d",
+      "bytes": 7276,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/formation-delta-v14.mjs",
+      "source": "QHON/human8/formation-delta-v14.mjs",
+      "sourceSHA256": "7e2df145ced33b2c204e9c49fea98b1df23699730a12ae40f083310b6af04f9e",
+      "exportSHA256": "7e2df145ced33b2c204e9c49fea98b1df23699730a12ae40f083310b6af04f9e",
+      "bytes": 2660,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/gnn-color-contract-v1.mjs",
+      "source": "QHON/human8/gnn-color-contract-v1.mjs",
+      "sourceSHA256": "d587fd052453687a748815a1f8f2423554e5a2569c37e988a92c2d73da5de7c3",
+      "exportSHA256": "d587fd052453687a748815a1f8f2423554e5a2569c37e988a92c2d73da5de7c3",
+      "bytes": 3604,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/neuron-contribution-contract-v1.mjs",
+      "source": "QHON/human8/neuron-contribution-contract-v1.mjs",
+      "sourceSHA256": "5a5407ad047409e49de4dfbaec8016a1f99d32ffd60882cab6b090ae1d57d13d",
+      "exportSHA256": "5a5407ad047409e49de4dfbaec8016a1f99d32ffd60882cab6b090ae1d57d13d",
+      "bytes": 5962,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "src/qhon/model-v3.mjs",
+      "source": "QHON/initial-20260922/model-v3.mjs",
+      "sourceSHA256": "f5ef1af3abe0379dbe7be00944e996e283c07e059f9e0009fb87f5f56f508d93",
+      "exportSHA256": "f5ef1af3abe0379dbe7be00944e996e283c07e059f9e0009fb87f5f56f508d93",
+      "bytes": 7594,
+      "modified": false,
+      "change": "byte-identical copy"
+    },
+    {
+      "file": "tests/original-color-check.mjs",
+      "source": "QHON/human8/check-gnn-color-contract.mjs",
+      "sourceSHA256": "e5b7415125ca7588fa400b8e17d378543a84eecd2af5fd0cf5528ee6061aad78",
+      "exportSHA256": "8ef68ea9f6609e35fa742774685f210203e84bc3cfb171e3b4c7d7ea376993e9",
+      "bytes": 2403,
+      "modified": true,
+      "change": "Only relative imports adjusted for package tests directory"
+    },
+    {
+      "file": "tests/original-contribution-check.mjs",
+      "source": "QHON/human8/check-neuron-contribution-contract-v1.mjs",
+      "sourceSHA256": "e99d8ca1057b0d53a827ac87484143adedac31a0692151eaacb72b669e5e69b7",
+      "exportSHA256": "fbc97a7c43915eba7301c459883105212d4ad89089781277bac47bc74e7cf5c8",
+      "bytes": 4429,
+      "modified": true,
+      "change": "Only relative imports adjusted for package tests directory"
+    },
+    {
+      "file": "docs/GNN_DESIGN_SNAPSHOT.ko.md",
+      "source": "Neuron Set/GNN 신경망 설계 계획.md",
+      "sourceSHA256": "3e162e960f8d5dd6d98294a9e699348dffd408d52171b4bb6c649bf5c2323d6b",
+      "exportSHA256": "648e336ef8250bc5acbf57c0f1be0919c39cc69538132223dd73c85a31f9cebd",
+      "bytes": 29872,
+      "modified": true,
+      "change": "Documentation link portability and source-snapshot preface only"
+    },
+    {
+      "file": "docs/CONTROL_SPEC.md",
+      "source": "Astra/docs/digital-neuron/CONTROL_SPEC.md",
+      "sourceSHA256": "1b3cfd5b15baed5914a26f0bd39836f8ad9a695b3583b038e17e959b1959d97e",
+      "exportSHA256": "e54783049e5e1e632e49885a59d05c3d5d3e8ae9bf9091e260f116a4b32c5481",
+      "bytes": 8571,
+      "modified": true,
+      "change": "Documentation link portability and source-snapshot preface only"
+    },
+    {
+      "file": "docs/CONTROL_PROFILE_GUIDE.md",
+      "source": "Astra/docs/digital-neuron/CONTROL_PROFILE_GUIDE.md",
+      "sourceSHA256": "cd6111de0895a19fb550b8afa22c91806e81d1c63facc21e2a4636eabab09c7f",
+      "exportSHA256": "0bf473113270f3c541a889b39d429b3887d7a7a9bb910482db1fc485b7fee467",
+      "bytes": 1780,
+      "modified": true,
+      "change": "Documentation link portability and source-snapshot preface only"
+    }
+  ]
+}

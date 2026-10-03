@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {thoughtContributions,evaluateAssignedContributions} from '../src/qhon/neuron-contribution-contract-v1.mjs';
+const shape={schema:'fixture',frame:'common',window:[0,1],nodes:[{id:0,xyz:[0,0,0]},{id:1,xyz:[1,0,0]},{id:2,xyz:[0,1,0]}],edges:[[0,1],[0,2]],events:[{source:0,target:1,sequence:0,emittedAt:.1,arrivedAt:.2,g:1},{source:0,target:2,sequence:1,emittedAt:.1,arrivedAt:.2,g:1}],spikes:[[0,.1]]};
+const record=thoughtContributions(shape);
+assert.deepEqual(record.coefficients.map(x=>x.spikeEvents),[1,0,0]);
+assert.deepEqual(record.coefficients.map(x=>x.distinctRecordedNeuron),[1,1,1]);
+assert.deepEqual(record.coefficients.map(x=>x.naiveEdgeEndpointCount),[2,1,1]);
+assert.deepEqual(record.coefficients.map(x=>x.receivedDeliveries),[0,1,1]);
+assert.deepEqual(record.shape,shape);assert.equal(record.adoptedPolicy,null);
+const assignment=new Map([[0,[1,0]],[1,[0,1]],[2,[0,1]]]);
+assert.deepEqual(evaluateAssignedContributions(record,{policy:'spikeEvents',labels:['a','b'],assignments:assignment}).raw,[1,0]);
+assert.deepEqual(evaluateAssignedContributions(record,{policy:'distinctRecordedNeuron',labels:['a','b'],assignments:assignment}).raw,[1,2]);
+const scaled=structuredClone(shape);scaled.nodes.forEach(n=>n.xyz=n.xyz.map(x=>x/16));assert.deepEqual(thoughtContributions(scaled).coefficients,record.coefficients);
+const repeated=structuredClone(shape);repeated.spikes.push([0,.3]);repeated.events.push({...shape.events[0],sequence:2,emittedAt:.3,arrivedAt:.4});
+assert.equal(thoughtContributions(repeated).coefficients[0].distinctRecordedNeuron,1);assert.equal(thoughtContributions(repeated).coefficients[0].spikeEvents,2);
+const mirror=structuredClone(shape);mirror.nodes.forEach(n=>{n.id=26-n.id;n.xyz=n.xyz.map(x=>2-x);});mirror.edges=mirror.edges.map(e=>e.map(n=>26-n));mirror.spikes=mirror.spikes.map(([n,t])=>[26-n,t]);mirror.events.forEach(e=>{e.source=26-e.source;e.target=26-e.target;});
+const mirroredAssignments=new Map([...assignment].map(([id,v])=>[26-id,v]));assert.deepEqual(evaluateAssignedContributions(thoughtContributions(mirror),{policy:'distinctRecordedNeuron',labels:['a','b'],assignments:mirroredAssignments}).raw,[1,2]);
+const carryIn=structuredClone(shape);carryIn.window=[.15,1];carryIn.spikes=[];const ci=thoughtContributions(carryIn);assert.equal(ci.observed.carryInDeliveries,2);assert.equal(ci.observed.emissionsWithoutInWindowSpike,2);assert.ok(ci.coefficients.every(x=>x.spikeEvents===0));
+assert.deepEqual(ci.shape.spikes,[],'Never invent a parent AP outside the window');
+const reversed=structuredClone(shape);reversed.events.reverse();assert.deepEqual(thoughtContributions(reversed).coefficients,record.coefficients);assert.deepEqual(thoughtContributions(reversed).shape.events,reversed.events);
+for(const mutate of [s=>s.spikes.push([0,.1]),s=>s.events.push({...s.events[0]}),s=>s.nodes.push({id:3,xyz:[1,1,0]}),s=>s.events[0].g=NaN,s=>s.events[0].arrivedAt=2,s=>s.spikes=[]]){const s=structuredClone(shape);mutate(s);assert.throws(()=>thoughtContributions(s));}
+assert.throws(()=>evaluateAssignedContributions(record,{policy:'naiveEdgeEndpointCount',labels:['a','b'],assignments:assignment}));
+assert.throws(()=>evaluateAssignedContributions(record,{policy:'spikeEvents',labels:['a','b'],assignments:new Map([[0,[1,0]]])}));
+const altered=structuredClone(record);altered.coefficients[0].spikeEvents=10;assert.throws(()=>evaluateAssignedContributions(altered,{policy:'spikeEvents',labels:['a','b'],assignments:assignment}));
+const empty=thoughtContributions({...shape,nodes:[],edges:[],events:[],spikes:[]});assert.deepEqual(evaluateAssignedContributions(empty,{policy:'spikeEvents',labels:['a'],assignments:new Map()}),{policy:'spikeEvents',labels:['a'],raw:[0],totalContributions:0,mean:null,scope:'Explicit caller-assigned numerical basis only. Raw sum is preserved; separately reported mean does not replace it. No emotion label or neuron assignment is supplied by this module.'});
+console.log(JSON.stringify({passed:true,HHCalls:0,scope:'Pure symbolic contribution contract; no assigned emotion experiment',checks:['branch fan-out','passive target versus actual AP','revisit alternatives','original record preserved','uniform view scaling','mirror with assignments','carry-in without invented AP','ordering retained','duplicate/malformed rejection','explicit assignment coverage','altered coefficient rejected','empty record']}));

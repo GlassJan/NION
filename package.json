@@ -1,0 +1,18 @@
+{
+  "name": "project-nion-research-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "description": "Extracted NION neuron and synapse sources with experimental QHON formation and representation modules",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "verify": "node scripts/verify-package.mjs",
+    "demo:neuron": "node examples/one-neuron.mjs",
+    "demo:synapse": "node examples/one-synapse.mjs",
+    "demo:formation": "node examples/formation.mjs --fixture",
+    "check:color": "node tests/original-color-check.mjs",
+    "check:contribution": "node tests/original-contribution-check.mjs"
+  }
+}
