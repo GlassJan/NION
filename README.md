@@ -49,9 +49,3 @@ The million-neuron complete graph, autonomous thought-path selection, learned co
 `SOURCE_MANIFEST.json` records logical source locations and original/export SHA-256 hashes without private absolute paths. Core copied modules are byte-identical. Entry wrappers, input validation, examples and packaging tests were added for this export. Two original checks only have their relative import paths adjusted. Original documentation links were adapted for portability.
 
 QHON's later coupled 27-cell resource/learning engine is **not** replaced by this standalone neuron/STDP pair. This kit does not reproduce every QHON campaign. Large results, personal paths, credentials, background runners and automatic research schedules are excluded.
-
-## Contributing and license status
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for concrete extension tasks and validation expectations. A software check is not biological validation, a memory-retention duration, or a measure of selfhood.
-
-**License choice is pending.** `UNLICENSED` is a temporary package status, not an open-source license. The owner must select a license and confirm attribution before requesting public redistribution under specific terms; see [LICENSE_STATUS.md](LICENSE_STATUS.md). No MIT/Apache license has been silently assigned. `private: true` only prevents accidental npm publication; it does not configure GitHub visibility.
