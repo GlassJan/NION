@@ -4,6 +4,8 @@
 
 This project follows the GNU AGPLv3 license. For those who wish to use it commercially without the obligation to disclose the source code, including for network services (SaaS/API), or if you wish to acquire(?) it, please contact wtiger0718@naver.com.
 
+As this is my first time using GitHub, these files were created by AI. I ask for your understanding.
+
 This repository is a portable extraction of existing NION/Neuron Set and QHON research code. It contains a **single-cell model**, a **plastic synapse**, and **experimental formation/representation rules**. It is not a finished million-neuron NION GNN, a trained model, or evidence of human-like consciousness.
 
 ## Start here
