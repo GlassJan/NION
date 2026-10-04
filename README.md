@@ -2,7 +2,7 @@
 
 [한국어 설명](README.ko.md) · [Architecture and equations](docs/ARCHITECTURE.md) · [Contribution guide](CONTRIBUTING.md)
 
-This project follows the GNU AGPLv3 license. For those who wish to use it commercially without the obligation to disclose the source code, including for network services (SaaS/API), or if you wish to acquire(?) it, please contact wtiger0718@naver.com.
+This project follows the Apache 2.0 license. For those who wish to use it commercially without the obligation to disclose the source code, including for network services (SaaS/API), or if you wish to acquire(?) it, please contact wtiger0718@naver.com.
 
 As this is my first time using GitHub, these files were created by AI. I ask for your understanding.
 
