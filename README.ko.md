@@ -74,4 +74,4 @@ PlasticSynapse는 전도도 크기를 학습하는 STDP 상태입니다. 별도�
 
 코드 출처와 해시는 `SOURCE_MANIFEST.json`에 있으며 원래 사용자 PC 절대 경로를 넣지 않았습니다. 복사한 핵심 계산 소스는 원본과 동일합니다. 진입점·입력 검사·데모·배포용 검증기는 이번에 추가했습니다.
 
-**라이선스는 소유자 선택 전입니다.** `UNLICENSED` 표기를 실제 오픈소스 라이선스로 오해하지 마세요. MIT 등 특정 이용허락을 임의로 부여하지 않았습니다. [LICENSE_STATUS.md](LICENSE_STATUS.md)에 결정이 필요한 부분을 적었습니다. GitHub 업로드 자체는 이 작업에서 실행하지 않았습니다.
+**이 프로젝트는 [Apache License 2.0](LICENSE)을 따릅니다.** 소스는 [공개 GitHub 저장소](https://github.com/GlassJan/NION)에서 제공됩니다.
